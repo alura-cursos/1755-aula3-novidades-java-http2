@@ -1,4 +1,4 @@
-# novidades-java-http2
+Novidades-java-http2
 class TesteHttp11 
 - Utiliza a forma pré-java 11 para fazer requisições. 
 class TesteHttp2
