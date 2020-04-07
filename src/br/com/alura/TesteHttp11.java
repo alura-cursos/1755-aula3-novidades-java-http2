@@ -13,16 +13,14 @@ public class TesteHttp11 {
 		URL url = new URL("https://www.casadocodigo.com.br");
 		URLConnection uc = url.openConnection();
 
-		BufferedReader br = 
-				new BufferedReader(new InputStreamReader(uc.getInputStream()));
+		BufferedReader br = new BufferedReader(new InputStreamReader(uc.getInputStream()));
 
 		String line = "";
 
-		while(br.readLine() != null) {
+		while (br.readLine() != null) {
 			line = line.concat(br.readLine()).concat(System.lineSeparator());
 		}
 
 		System.out.println(line);
 	}
-
 }
