@@ -1,15 +1,12 @@
 package br.com.alura.dao;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 public class CriaturaDAO {
 
-	public List<String> listar() throws InterruptedException {
-		List<String> criaturas = new ArrayList<String>();
-		Thread.sleep(2000);
-		criaturas.add("Shewbacca");
-		criaturas.add("Yoda");
-		return criaturas;
+	public void listar() {
+		Map<String, List<String>> criaturas = Map.of("nome", List.of("Shewbacca, Yoda, Pikachu"));
+		System.out.println("[" + criaturas + "]");
 	}
 }
